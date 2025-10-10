@@ -3,5 +3,6 @@ function insert_Row() {
   const table = document.getElementById("sampleTable");
   const newElement = document.createElement("tr");
   newElement.innerHTML = "<td>New Cell1</td><td>New Cell2</td>";
-  table.insertBefore(newElement, table.firstElementChild);
+  const tbody = table.firstElementChild;
+  tbody.insertBefore(newElement, tbody.firstElementChild);
 }
